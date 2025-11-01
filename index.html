@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agenda Telefônica</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #e9eef2;
+    }
+    .container {
+        width: 500px;
+        margin: 50px auto;
+        background-color: #f9fcff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        padding: 15px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 15px;
+        background-color: #1e4e74;
+        color: white;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    /* Grade de 2 colunas e 2 linhas */
+    .grid-inputs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+    .input-group {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+    input {
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .search {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    button {
+        padding: 6px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .add { background-color: #4CAF50; color: white; }
+    .update { background-color: #007bff; color: white; }
+    .delete { background-color: #dc3545; color: white; }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 6px;
+        text-align: left;
+    }
+    th {
+        background-color: #1e4e74;
+        color: white;
+    }
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Agenda Telefônica</h2>
+
+    <div class="grid-inputs">
+        <div class="input-group">
+            <label for="nome">Nome*</label>
+            <input type="text" id="nome" placeholder="Digite o nome">
+        </div>
+        <div class="input-group">
+            <label for="telefone1">Telefone1*</label>
+            <input type="text" id="telefone1" placeholder="Digite o primeiro telefone">
+        </div>
+        <div class="input-group">
+            <label for="telefone2">Telefone2*</label>
+            <input type="text" id="telefone2" placeholder="Digite o segundo telefone">
+        </div>
+        <div class="input-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" placeholder="Digite o email">
+        </div>
+    </div>
+
+    <div class="search">
+        <input type="text" placeholder="Procurar...">
+        <button>Ver dados</button>
+    </div>
+
+    <div class="buttons">
+        <button class="add">Adicionar</button>
+        <button class="update">Atualizar</button>
+        <button class="delete">Deletar</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Telefone1</th>
+                <th>Telefone2</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>João Futi</td>
+                <td>123</td>
+                <td>456</td>
+                <td>joao@gmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Futi Muanda</td>
+                <td>987</td>
+                <td>654</td>
+                <td>futi@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
