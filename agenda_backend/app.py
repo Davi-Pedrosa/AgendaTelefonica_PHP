@@ -7,10 +7,10 @@ from routes.categorias_routes import categorias_bp
 app = Flask(__name__)
 CORS(app)
 
-# Cria as tabelas se não existirem
+# cria as tabelas se não existir
 Base.metadata.create_all(bind=engine)
 
-# Registra as rotas
+# registra as rotas
 app.register_blueprint(contatos_bp)
 app.register_blueprint(categorias_bp)
 
