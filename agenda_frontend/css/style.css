@@ -1,4 +1,3 @@
-yle>
     body {
         font-family: Arial, sans-serif;
         background-color: #e9eef2;
@@ -20,7 +19,6 @@ yle>
         padding: 10px;
         border-radius: 6px;
     }
-    /* Grade de 2 colunas e 2 linhas */
     .grid-inputs {
         display: grid;
         grid-template-columns: 1fr 1fr;
