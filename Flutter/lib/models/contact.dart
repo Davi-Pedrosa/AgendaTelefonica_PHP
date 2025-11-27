@@ -1,5 +1,5 @@
 class Contact {
-  final int? id;
+  final String? id;
   final String nome;
   final String telefone1;
   final String telefone2;
@@ -28,7 +28,7 @@ class Contact {
 
   factory Contact.fromMap(Map<String, dynamic> map) {
     return Contact(
-      id: map['id'] as int?,
+      id: map['id']?.toString(),
       nome: map['nome'] as String,
       telefone1: map['telefone1'] as String,
       telefone2: map['telefone2'] as String,
@@ -37,7 +37,7 @@ class Contact {
   }
 
   Contact copyWith({
-    int? id,
+    String? id,
     String? nome,
     String? telefone1,
     String? telefone2,

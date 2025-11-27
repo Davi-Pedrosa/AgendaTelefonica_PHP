@@ -74,15 +74,9 @@ class SupabaseService {
     }
   }
 
-  Future<void> deleteContact(int id) async {
-    try {
-      await _supabase
-          .from('contatos')
-          .delete()
-          .eq('id', id);
-    } catch (e) {
-      throw Exception('Erro ao deletar contato: $e');
-    }
-  }
+  Future<void> deleteContact(String id) async {
+  await _supabase.from('contatos').delete().eq('id', id);
+}
+
 }
 

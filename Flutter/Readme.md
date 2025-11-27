@@ -101,7 +101,7 @@ A aplicação possui um layout moderno com:
 
 As credenciais do Supabase estão configuradas em `lib/config/supabase_config.dart`:
 
-- URL: https://txrkcdweknuxdbwaoekz.supabase.co
+- URL: https://nnljbqplnaibvuwotkxs.supabase.co
 - API Key: Configurada no arquivo
 
 ## 📝 Estrutura do Projeto
