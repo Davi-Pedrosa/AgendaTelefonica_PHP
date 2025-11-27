@@ -1,5 +1,5 @@
     body {
-        font-family: Arial, sans-serif;
+        font-family: monospace;
         background-color: #e9eef2;
     }
     .container {
@@ -40,8 +40,10 @@
     }
     .search {
         display: flex;
+        margin-top: 30px;
+        width: 50%;
         justify-content: space-between;
-        margin-top: 15px;
+        border: 1px solid #4CAF50;
     }
     button {
         padding: 5px 15px;
@@ -54,7 +56,13 @@
 .add, .update, .delete {
     transition: all 0.3s ease-in-out; /* animação suave */
 }
-
+/* Search */
+.searchBtn { 
+    background-color: #237d02; 
+    color: #ffffff; 
+    font-weight: bold;
+    border-radius: 0;
+}
 /* ADD */
 .add { 
     background-color: #ffffff; 
@@ -109,5 +117,5 @@
     .buttons {
         display: flex;
         justify-content: space-between;
-        margin-top: 15px;
+        margin-top: 50px;
     }
