@@ -5,7 +5,7 @@
     .container {
         width: 500px;
         margin: 50px auto;
-        background-color: #f9fcff;
+        background-color: #ffffff;
         border: 1px solid #ccc;
         border-radius: 8px;
         box-shadow: 0 0 8px rgba(0,0,0,0.2);
@@ -13,9 +13,8 @@
     }
     h2 {
         text-align: center;
-        margin-bottom: 15px;
-        background-color: #1e4e74;
-        color: white;
+        margin-bottom: 40px;
+        color: #2ba100;
         padding: 10px;
         border-radius: 6px;
     }
@@ -31,11 +30,13 @@
     label {
         font-weight: bold;
         margin-bottom: 4px;
+        color:#848484;
     }
     input {
         padding: 6px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
+        border: none;
+        border-bottom: 1px solid #3fbc12;
+        outline: none;
     }
     .search {
         display: flex;
@@ -43,15 +44,53 @@
         margin-top: 15px;
     }
     button {
-        padding: 6px 12px;
+        padding: 5px 15px;
         border: none;
         border-radius: 4px;
         cursor: pointer;
-        font-weight: bold;
+        background-color: #ffffff;
+        color: #848484;
     }
-    .add { background-color: #4CAF50; color: white; }
-    .update { background-color: #007bff; color: white; }
-    .delete { background-color: #dc3545; color: white; }
+.add, .update, .delete {
+    transition: all 0.3s ease-in-out; /* animação suave */
+}
+
+/* ADD */
+.add { 
+    background-color: #ffffff; 
+    color: #4CAF50; 
+    border: solid 2px #4CAF50; 
+}
+.add:hover{
+    background-color: #4CAF50;
+    color:#ffffff;
+    transform: scale(1.1); /* cresce 10% */
+}
+
+/* UPDATE */
+.update { 
+    background-color: #ffffff; 
+    color:#007bff; 
+    border: solid 2px #007bff; 
+}
+.update:hover{
+    background-color: #007bff;
+    color:#ffffff;
+    transform: scale(1.1);
+}
+
+/* DELETE */
+.delete { 
+    background-color: #ffffff; 
+    color: #dc3545;  
+    border: solid 2px #dc3545; 
+}
+.delete:hover{
+    background-color: #dc3545;
+    color:#ffffff;
+    transform: scale(1.1);
+}
+
     table {
         width: 100%;
         border-collapse: collapse;
@@ -64,7 +103,7 @@
         text-align: left;
     }
     th {
-        background-color: #1e4e74;
+        background-color: #237d02;
         color: white;
     }
     .buttons {
